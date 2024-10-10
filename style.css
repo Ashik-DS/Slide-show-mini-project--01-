@@ -1,0 +1,35 @@
+.slideshow{
+
+    height: 90vh;
+    width: auto;
+    background-color: rgb(34, 146, 113);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+}
+.slides{
+text-align: center;
+
+}
+.slide-item{
+    
+    position: absolute;
+    /* top: 4rem;
+    left:28rem; */
+transform: translate(-50%,-50%) scale(0);
+transition: .6s;
+
+}
+
+.slide-item.current{
+    position: absolute;
+    transform: translate(-50%,-50%) scale(1);
+    transition: .6s;
+}
+.slide-item p , h2{
+    font-size: 8rem;
+    color: white;
+   
+}
